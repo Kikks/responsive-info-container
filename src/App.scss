@@ -1,0 +1,130 @@
+.container {
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+}
+
+.info {
+	padding: 0.5rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	box-shadow: 0 0.5rem 1rem rgba($color: #000000, $alpha: 0.05);
+	background: #fff;
+	height: 108px;
+
+	@media (min-width: 350px) {
+		height: 74px;
+	}
+
+	@media (min-width: 600px) {
+		height: auto;
+	}
+
+	@media (min-width: 1024px) {
+		background-color: transparent;
+		box-shadow: none;
+		padding: 0;
+		height: auto;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+
+		@media (min-width: 1024px) {
+			flex-direction: row;
+			align-items: center;
+			margin: 0 auto;
+			height: auto;
+			border-radius: 5rem;
+			box-shadow: 0 0.2rem 0.2rem rgba($color: #000000, $alpha: 0.1);
+			background: #fff;
+			padding: 0.5rem 2rem;
+		}
+	}
+
+	&__group {
+		margin: 0.2rem;
+		display: flex;
+		align-items: center;
+
+		&--break-xs {
+			@media (max-width: 350px) {
+				align-items: start;
+				flex-direction: column;
+			}
+		}
+
+		&--break-small {
+			@media (max-width: 500px) {
+				align-items: start;
+				flex-direction: column;
+			}
+		}
+	}
+
+	&-item {
+		padding: 0 0.5rem;
+		background-color: #fff;
+		border-right: solid #ccc 1px;
+		display: flex;
+		align-items: center;
+
+		@media (max-width: 500px) {
+			padding: 0 0.25rem;
+		}
+
+		&__icon {
+			height: 1rem;
+			width: 1rem;
+			background-color: #ccc;
+			margin-right: 0.2rem;
+
+			@media (max-width: 600px) {
+				height: 0.8rem;
+				width: 0.8rem;
+			}
+		}
+
+		&__details {
+			font-weight: 600;
+			font-size: 0.75rem;
+
+			@media (max-width: 600px) {
+				font-size: 0.55rem;
+			}
+		}
+	}
+
+	.btn {
+		height: 3rem;
+		width: 3rem;
+		background-color: #007d99;
+		margin-left: 0.5rem;
+
+		@media (max-width: 600px) {
+			height: 2.5rem;
+			width: 2.5rem;
+		}
+
+		@media (min-width: 1024px) {
+			display: none;
+		}
+	}
+
+	.category {
+		color: #007d99;
+		text-decoration: underline;
+		font-weight: 600;
+		font-size: 0.75rem;
+
+		@media (max-width: 600px) {
+			font-size: 0.55rem;
+		}
+	}
+}
