@@ -1,10 +1,11 @@
 import "./App.scss";
-import Accordion from "./components/Accordion";
+import "react-checkbox-tree/lib/react-checkbox-tree.css";
+import CountrySearch from "./components/CountrySearch/CountrySearch2";
 
 function App() {
 	return (
 		<div className='accordion-container'>
-			<Accordion />
+			<CountrySearch />
 		</div>
 	);
 }

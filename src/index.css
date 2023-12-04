@@ -71,3 +71,99 @@ button:focus-visible {
 #root {
 	width: 100%;
 }
+
+.checkbox-tree__continent {
+	border-bottom: solid 2px #01837436;
+}
+
+.checkbox-tree__country,
+.checkbox-tree__continent {
+	width: 100%;
+	display: grid;
+	align-items: center;
+	font-size: 1rem;
+}
+
+.checkbox-tree__city .rct-text,
+.checkbox-tree__country .rct-text {
+	width: 100%;
+}
+
+.checkbox-tree__continent .rct-text,
+.checkbox-tree__country .rct-text {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0.5rem;
+	transition: all 0.3s ease;
+}
+
+.checkbox-tree__continent .rct-text:hover {
+	background-color: #eee;
+}
+
+.checkbox-tree__continent .rct-text label,
+.checkbox-tree__country .rct-text label {
+	order: 1;
+}
+
+.checkbox-tree__continent .rct-text span,
+.checkbox-tree__country .rct-text span {
+	flex: 1;
+	order: 2;
+}
+
+.checkbox-tree__continent .rct-text span:hover,
+.checkbox-tree__continent .rct-text span:focus,
+.checkbox-tree__city .rct-text span:hover,
+.checkbox-tree__city .rct-text span:focus,
+.checkbox-tree__country .rct-text span:hover,
+.checkbox-tree__country .rct-text span:focus {
+	background-color: transparent;
+}
+
+.checkbox-tree__continent .rct-text button,
+.checkbox-tree__country .rct-text button {
+	order: 3;
+}
+
+.checkbox-tree__city .rct-text {
+	display: flex;
+	justify-content: flex-start;
+}
+.checkbox-tree__city .rct-text .rct-collapse {
+	display: none;
+}
+
+.checkbox-tree__city .rct-text button,
+.checkbox-tree__city .rct-text label,
+.checkbox-tree__city .rct-text span {
+	flex: initial;
+}
+
+.rct-node-icon {
+	display: none;
+}
+
+.checkbox-tree__remote {
+	border-bottom: solid 2px #01837436;
+}
+.checkbox-tree__remote .rct-collapse {
+	display: none;
+}
+.checkbox-tree__remote .rct-text {
+	width: 100%;
+	display: flex;
+	/* justify-content: space-between; */
+	align-items: center;
+	padding: 1rem 0.5rem;
+	transition: all 0.3s ease;
+}
+
+.checkbox-tree__remote {
+	width: 100%;
+	display: grid;
+	align-items: center;
+	font-size: 1rem;
+}
